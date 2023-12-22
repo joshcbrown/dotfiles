@@ -1,0 +1,75 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passtrough": false,
+    "gtk-layer-shell": true,
+    "height": 0,
+    "modules-left": [
+        "sway/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "tray",
+        "pulseaudio"
+    ],
+    "hyprland/window": {
+        "format": "{}",
+        "max-length": 50
+    },
+    "sway/workspaces": {
+        "on-click": "activate",
+        "format": "{name}",
+        "format-icons": {
+            "default": "",
+            "active": "󰮯",
+            "urgent": "󰊠"
+        }
+    },
+    "cpu": {
+        "interval": 5,
+        "format": "  {usage}%",
+        "max-length": 10
+    },
+    "tray": {
+        "icon-size": 17,
+        "tooltip": false,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:󰥔  %R   󰃭  %a %d  %b %Y}"
+    },
+    "network": {
+        "format": "{ifname}",
+        "format-wifi": "󰤨   {essid} {bandwidthTotalBytes}",
+        "format-ethernet": "󰊗  Enternet",
+        "format-disconnected": "󰤭 ",
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": "󰤢   Signal Strength:  {signalStrength}%",
+        "tooltip-format-ethernet": "󰊗   Signal Strength:  {signalStrength}%",
+        "on-click": "~/.config/waybar/scripts/rofi-wifi-menu.sh",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50,
+        "interval": 5
+    },
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "tooltip": false,
+        "format-muted": " Muted",
+        "on-click": "pamixer -t",
+        "on-scroll-up": "pamixer -i 5",
+        "on-scroll-down": "pamixer -d 5",
+        "scroll-step": 5,
+        "format-icons": {
+            "default": [
+                "",
+                "",
+                "",
+                ""
+            ]
+        }
+    }
+}

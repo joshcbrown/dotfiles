@@ -1,0 +1,21 @@
+# Initial Setup 
+exec ~/set_once.sh
+
+# Config for sway
+#
+# Read `man 5 sway` for a complete reference.
+
+# bindsym $mod+Return exec kitty
+# bindsym $mod+i exec --no-startup-id maim "$HOME/Pictures/$(date)"
+# bindsym $mod+Shift+i exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/$(date).png"
+# bindsym $mod+w exec /usr/bin/firefox
+# bindsym $mod+n exec /usr/bin/thunar
+# user config directory
+include $HOME/.config/sway/config.d/*
+
+# only enable this if every app you use is compatible with wayland
+# xwayland disable
+
+#exec_always --no-startup-id picom --config  ~/.config/picom.conf
+#exec --no-startup-id dunst --config ~/.config/dunst/dunstrc
+#exec --no-startup-id sleep 2 && nitrogen --restore

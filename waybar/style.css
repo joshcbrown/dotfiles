@@ -1,0 +1,125 @@
+/* @import "./colors/nightowl.css"; */
+@import "./colorschemes/everforest.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: Cartograph CF Mono;
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  /* background: rgba(21, 18, 27, 0.4); */
+  color: @color8;
+  background: @base;
+}
+
+tooltip {
+  background: @base;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: @crust;
+}
+
+#window,
+#pulseaudio,
+#network,
+#workspaces,
+#cpu,
+#memory,
+#tray,
+#backlight,
+#custom-swaync {
+  background: @crust;
+  padding: 2px 16px;
+  margin: 6px 0 6px 0;
+  border: 1px solid @crust;
+  font-weight: 600;
+  border-radius: 10rem;
+}
+
+#tray {
+  margin-right: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#workspaces {
+  margin-left: 10px;
+  padding-right: 0px;
+  padding-left: 5px;
+  margin-right: 10px;
+  font-weight: Bold;
+}
+
+#workspaces button {
+  padding: 5px;
+  color: @color9;
+  margin-right: 5px;
+}
+
+#workspaces button.active {
+  color: @color6;
+}
+
+#workspaces button.focused {
+  color: @color6;
+  font-weight: Bold;
+  background: @color7;
+  border-radius: 10px;
+}
+
+#workspaces button.urgent {
+  color: @color0;
+  background: #a6e3a1;
+  border-radius: 10px;
+}
+
+#workspaces button:hover {
+  background: @crust;
+  color: @color7;
+  border-radius: 10rem;
+}
+
+#window {
+  border-radius: 10px;
+  background: transparent;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+#cpu {
+  color: @color1;
+}
+
+#clock {
+  color: @color2;
+  border-radius: 10rem;
+  border-right: 0px;
+  font-weight: 600;
+}
+
+#custom-swaync {
+  color: @color6;
+  margin-right: 10px;
+  border-radius: 10rem;
+  margin-right: 10px;
+  border-radius: 10rem;
+  padding-right: 18px;
+}
+
+#network {
+  color: @color3;
+  margin-right: 10px;
+  border-radius: 10rem;
+}
+
+#pulseaudio {
+  color: @color5;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius: 10rem;
+  margin-right: 10px;
+}

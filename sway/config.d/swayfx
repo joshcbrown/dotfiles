@@ -1,0 +1,6 @@
+blur enable
+corner_radius 10
+for_window [app_id="org.wezfurlong.wezterm"] opacity 0.9
+for_window [app_id="sioyek"] opacity 0.9
+default_dim_inactive 0.2
+
