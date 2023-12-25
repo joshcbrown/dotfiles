@@ -1,7 +1,5 @@
-hide_search=true
 hide_scroll=true
 insensitive=true
-show=dmenu
 width=100
 lines=4
 location=top_right

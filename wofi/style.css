@@ -1,47 +1,39 @@
-/*
-Arc-Dark Color Scheme
-*/
-
-@define-color highlight #5294e2;
-@define-color base1  #404552;
-@define-color base2 #40455;
-@define-color base3  #4b5160;
-
-*{
-    font-family: UbuntuMono;
-}
+/* https://cloudninja.pw/docs/wofi.html */
 
 window {
-    border: 1px solid @highlight;
+    border: 2px solid black;
+    background-color: #333333;
 }
 
 #input {
-    margin-bottom: 15px;
-    padding:3px;
-    border-radius: 5px;
-    border:none;
-    color: white;
+    border: 2px solid black;
+    background-color: #555555;
+    font-size: 18px;
+    border-radius: 4px;
 }
 
-#inner-box {
-    background-color: @base3;
-}
+#inner-box {}
 
 #outer-box {
-    margin: 5px;
-    padding:15px;
-    background-color: @base2;
+    margin: 10px;
 }
 
-#text {
-    padding: 5px;
-    color: white;
+#scroll {
+    margin: 5px 0px;
+    font-size: 16px;
+    color: #ccc;
 }
 
-#entry:nth-child(even) {
-    background-color: @base1;
+#scroll label {
+    margin: 2px 0px;
 }
 
 #entry:selected {
-    background-color: @highlight;
+    border-radius: 4px;
+    background-color: rgb(105, 105, 105);
+    color: black;
+}
+
+#text {
+    border: 0px;
 }

@@ -7,9 +7,6 @@ Arc-Dark Color Scheme
 @define-color base2  #40455;
 @define-color base3  #4b5160;
 
-*{
-    font-family: UbuntuMono;
-}
 
 #window {
     border: 1px solid @highlight;
