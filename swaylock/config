@@ -2,10 +2,10 @@
 # no-unlock-indicator
 # daemonize
 indicator-caps-lock
-# datestr=%A
-image=$HOME/.config/sway/swaylock.png
+#datestr=%A
+image=$HOME/.config/sway/wallpapers/evening-sky.png
 scaling=fill
-font=UbuntuMono
+font=JetBrains Mono
 font-size=20
 
 # Ring
